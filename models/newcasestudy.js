@@ -17,15 +17,15 @@ const newcaseStudy = new mongoose.Schema({
     required: true,
     default: null,
   },
+  image: {
+    type: String,
+    required: true,
+  },
   author_name: {
     type: String,
     required: true,
   },
   cannonical_tag: {
-    type: String,
-    required: true,
-  },
-  category: {
     type: String,
     required: true,
   },
@@ -37,19 +37,35 @@ const newcaseStudy = new mongoose.Schema({
     type: String,
     required: true,
   },
-  content: {
-    type: String,
+  top: {
+    type: { para: String, para2: String, para3: String },
+    required: true,
+  },
+  top2: {
+    type: { para: String, para2: String, para3: String },
+    required: true,
+  },
+  top3: {
+    type: { para: String, para2: String, para3: String },
+    required: true,
+  },
+  top4: {
+    type: { para: String, para2: String, para3: String },
+    required: true,
+  },
+  bottom: {
+    type: { para: String, para2: String, para3: String },
     required: true,
   },
   created_at: {
     type: Date,
     required: true,
-    default: Date.UTC,
+    default: Date.now,
   },
   updated_at: {
     type: Date,
     required: true,
-    default: Date.UTC,
+    default: Date.now,
   },
 });
 

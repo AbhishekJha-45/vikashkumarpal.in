@@ -55,7 +55,8 @@
         <div class="navbar-brand">
           <a class="navbar-item mobile-aside-button">
             <span class="icon"
-              ><i class="mdi mdi-forwardburger mdi-24px"></i></span>
+              ><i class="mdi mdi-forwardburger mdi-24px"></i
+            ></span>
           </a>
           <div class="navbar-item">
             <div class="control">
@@ -340,7 +341,6 @@
                       document.getElementById("filename").value = filename;
                       console.log(filename);
                     };
-
                   </script>
                   <div class="field">
                     <label class="label">Upload Image</label>
@@ -481,7 +481,8 @@
                 </div>
               </div>
               <hr />
-
+              <label for="Article" class="label">Article</label>
+              <hr />
               <div class="field">
                 <div class="control icons-left icons-right">
                   <label class="label">Heading</label>
@@ -493,6 +494,22 @@
                     id="heading"
                     placeholder="H1 Heading goes Here"
                     value="https:localhost:5000/postsapi"
+                  />
+                </div>
+              </div>
+              <!-- rating -->
+              <div class="field">
+                <div class="control icons-left icons-right">
+                  <label class="label">Rating</label>
+                  <input
+                    class="input"
+                    required
+                    type="text"
+                    name="rating"
+                    disabled
+                    id="heading"
+                    placeholder="H1 Heading goes Here"
+                    value="0"
                   />
                 </div>
               </div>

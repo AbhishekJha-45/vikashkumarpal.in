@@ -44,9 +44,21 @@ const newblogPost = new mongoose.Schema({
     type: String,
     required: true,
   },
+  table_of_contents: {
+    type: String,
+    required: true,
+  },
   content: {
     type: String,
     required: true,
+  },
+  rating: {
+    type: Number,
+    required: false,
+  },
+  totalRatings: {
+    type: Number,
+    required: false,
   },
   created_at: {
     type: Date,
